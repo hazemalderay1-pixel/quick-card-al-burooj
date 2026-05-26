@@ -7,11 +7,11 @@
     <!-- خطوط Google Fonts للتصميم المينيمالي -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700;900&family=Reem+Kufi:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700;900&family=Reem+Kufi:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Lucide للأيقونات -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <!-- ملف التنسيق -->
-    <link rel="stylesheet" href="style.css?v=1.0.28">
+    <link rel="stylesheet" href="style.css?v=1.0.29">
 </head>
 <body>
     <div class="app-container">
@@ -61,7 +61,8 @@
                                 <div class="select-group">
                                     <label for="nameFont">نوع الخط</label>
                                     <select id="nameFont" class="custom-select">
-                                        <option value="Cairo" selected>Cairo (عصري)</option>
+                                        <option value="IBM Plex Sans Arabic" selected>IBM Plex Sans Arabic (أنيق)</option>
+                                        <option value="Cairo">Cairo (عصري)</option>
                                         <option value="Amiri">Amiri (خط أميري فخم)</option>
                                         <option value="Tajawal">Tajawal (ناعم)</option>
                                         <option value="Reem Kufi">Reem Kufi (كوفي عريق)</option>
@@ -78,16 +79,16 @@
                                 <div class="sub-range-group">
                                     <div class="range-labels">
                                         <span>الموقع الأفقي (X)</span>
-                                        <span id="nPosXVal">48%</span>
+                                        <span id="nPosXVal">50%</span>
                                     </div>
-                                    <input type="range" id="nPosX" min="5" max="95" value="48">
+                                    <input type="range" id="nPosX" min="5" max="95" value="50">
                                 </div>
                                 <div class="sub-range-group">
                                     <div class="range-labels">
                                         <span>الموقع الرأسي (Y)</span>
-                                        <span id="nPosYVal">43%</span>
+                                        <span id="nPosYVal">53%</span>
                                     </div>
-                                    <input type="range" id="nPosY" min="10" max="95" value="43">
+                                    <input type="range" id="nPosY" min="10" max="95" value="53">
                                 </div>
                             </div>
 
@@ -96,10 +97,10 @@
                                 <span>لون خط الاسم:</span>
                                 <div class="colors-grid" id="nameColors">
                                     <button class="color-btn" data-color="#D4AF37" style="background-color: #D4AF37;"></button>
-                                    <button class="color-btn" data-color="#FFFFFF" style="background-color: #FFFFFF; border: 1px solid #ccc;"></button>
+                                    <button class="color-btn active" data-color="#FFFFFF" style="background-color: #FFFFFF; border: 1px solid #ccc;"></button>
                                     <button class="color-btn" data-color="#FFF3CD" style="background-color: #FFF3CD;"></button>
-                                    <button class="color-btn active" data-color="#000000" style="background-color: #000000; border: 1px solid #fff;"></button>
-                                    <input type="color" id="nCustomColor" value="#000000">
+                                    <button class="color-btn" data-color="#000000" style="background-color: #000000; border: 1px solid #fff;"></button>
+                                    <input type="color" id="nCustomColor" value="#FFFFFF">
                                 </div>
                             </div>
                         </div>
@@ -154,6 +155,6 @@
     </div>
 
     <!-- ملف التفاعل البرمجي -->
-    <script src="script.js?v=1.0.28"></script>
+    <script src="script.js?v=1.0.29"></script>
 </body>
 </html>

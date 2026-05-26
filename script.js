@@ -46,11 +46,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // الإعدادات البصرية الموحدة لكل البطاقات
     const nameStyle = {
-        fontFamily: "Cairo",
+        fontFamily: "IBM Plex Sans Arabic",
         fontSize: 30,
-        xPercent: 48,
-        yPercent: 43,
-        color: "#000000",
+        xPercent: 50,
+        yPercent: 53,
+        color: "#FFFFFF",
         width: 0,
         height: 30
     };
@@ -262,7 +262,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // ضبط إعدادات الخط
         let activeFontSize = nameStyle.fontSize;
         ctx.font = `bold ${activeFontSize}px "${nameStyle.fontFamily}", Cairo, sans-serif`;
-        ctx.textAlign = "right";
+        ctx.textAlign = "center";
         ctx.textBaseline = "middle";
 
         // حساب الحجم التلقائي للخط لمنع التجاوز عن أبعاد الكارت (1080)
@@ -374,8 +374,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const padding = 40; 
 
         return (
-            clickX >= x - (nameStyle.width || 100) - padding &&
-            clickX <= x + padding &&
+            clickX >= x - (nameStyle.width || 100) / 2 - padding &&
+            clickX <= x + (nameStyle.width || 100) / 2 + padding &&
             clickY >= y - (nameStyle.height || 40) / 2 - padding &&
             clickY <= y + (nameStyle.height || 40) / 2 + padding
         );
