@@ -47,12 +47,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // الإعدادات البصرية الموحدة لكل البطاقات
     const nameStyle = {
         fontFamily: "IBM Plex Sans Arabic",
-        fontSize: 30,
+        fontSize: 50,
         xPercent: 50,
         yPercent: 53,
         color: "#FFFFFF",
         width: 0,
-        height: 30
+        height: 50
     };
 
     // --- تحميل قوالب البطاقات المربعة ---
